@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<link href="./../../css/general.css" rel="stylesheet" type="text/css">
+<title>Edit Entry</title>
+</head>
+<body>
+	<div align="center" class="newEntryForm">
+		<h1>Edit GIF</h1>
+		<br />
+		<form action="#" th:action="@{/save}" th:object="${gif}" method="post">
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>GIF ID:</td>
+					<td><input type="text" th:field="*{id}" readonly="readonly"/></td>
+				</tr>
+				<tr>
+					<td>User ID:</td>
+					<td><input type="text" th:field="*{user_id}" /></td>
+				</tr>
+				<tr>
+					<td>Keyword:</td>
+					<td><input type="text" th:field="*{keyword}" /></td>
+				</tr>
+				<tr>
+					<td>Url:</td>
+					<td><input type="text" th:field="*{url}" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit">Save</button></td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+
+</body>
+</html>

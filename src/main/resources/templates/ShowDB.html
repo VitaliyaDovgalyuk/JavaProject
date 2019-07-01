@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Catalog Manager</title>
+<link href="css/general.css" rel="stylesheet">
+</head>
+<body>
+<div class="font" align="center">
+	<h1>Catalog</h1>
+	<a href="new">Create New Entry</a>
+	<br/><br/>
+	<table border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<th>Gif ID</th>
+				<th>User ID</th>
+				<th>Keyword</th>
+				<th>Url</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="Gif:${listGifs}">
+				<td th:text="${Gif.id}">Giphy ID</td>
+				<td th:text="${Gif.user_id}">User ID</td>
+				<td th:text="${Gif.keyword}">Keyword</td>
+				<td ><img alt="Gif" th:src="${Gif.url}" onerror="this.onerror=null; this.src='Default.png'"></td>
+				<!-- <td th:text="${Gif.url}"><img alt="Gif" src="${Gif.url}"></td> -->
+				<td>
+					<a th:href="@{'/edit/' + ${Gif.id}}">Edit</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a  th:href="@{'/delete/' + ${Gif.id}}">Delete</a>
+				</td>
+			</tr>
+		</tbody>
+</table>
+<a  class="button" th:href="@{'/delete/all'}">Delete ALL</a>
+</div>
+</body>
+</html>

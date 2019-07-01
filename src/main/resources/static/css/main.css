@@ -1,0 +1,97 @@
+body {
+	background-image: url("/images/bg2.png");
+	margin: 0 auto;
+}
+
+.title {
+	background-color: #e6b3b3;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+	height: 19%;
+}
+
+.titlefont {
+	font-size: 4vw;
+	text-align: center;
+	font-family: 'Mali', cursive;
+	padding: 2%;
+}
+
+.main-container {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 5em;
+	padding: 4vh;
+}
+
+#save {
+	visibility: hidden;
+}
+
+#userIdInput {
+	visibility: hidden;
+}
+
+#labeUserId {
+	visibility: hidden;
+}
+
+#saveFormHome {
+	visibility: hidden;
+}
+#sButton{
+	visibility: hidden;
+}
+
+.img-container {
+	display: flex;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 25em;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+
+	/* 1vw = 1% of viewport width
+1vh = 1% of viewport height
+1vmin = 1vw or 1vh, whichever is smaller
+1vmax = 1vw or 1vh, whichever is larger */
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.main {
+	max-width: 65%;
+	margin: 0 auto;
+	background-image: url("/images/section.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px
+		rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px
+		rgba(0, 0, 0, .1) inset;
+}
+
+.quote {
+	font-family: 'Satisfy', cursive;
+	font-size: 150%;
+	padding: 10%; . h1 { font-family : 'Satisfy', cursive;
+	font-size: 150%;
+	padding: 10%;
+	font-color: white;
+}
+

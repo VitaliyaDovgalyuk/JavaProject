@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+html { 
+  background: url("/images/di.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.newEntryForm {
+	padding: 15%;
+}
+
+h1 {
+	color: white;
+}
+
+.p {
+	font-size: 200%;
+	color: white;
+}
+
+.font {
+	text-size: 150%;
+	text-color: white;
+}
+
+.quote {
+	font-family: 'Satisfy', cursive;
+	font-size: 150%;
+	padding: 10%; . h1 { font-family : 'Satisfy', cursive;
+	font-size: 150%;
+	padding: 10%;
+	font-color: white;
+}
+
+.table {
+	background-color: #e6b3b3;
+}
+
+a {
+	color: white;
+}
